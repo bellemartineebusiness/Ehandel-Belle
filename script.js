@@ -5,6 +5,19 @@
 (function () {
   'use strict';
 
+  /* ── Intro Curtain ──────────────────────────── */
+  var CURTAIN_HOLD_MS   = 1800; // how long to show the intro logo
+  var CURTAIN_REMOVE_MS = 1200; // matches the CSS panel transition duration
+  var introCurtain = document.getElementById('intro-curtain');
+  if (introCurtain) {
+    setTimeout(function () {
+      introCurtain.classList.add('done');
+      setTimeout(function () {
+        introCurtain.remove();
+      }, CURTAIN_REMOVE_MS);
+    }, CURTAIN_HOLD_MS);
+  }
+
   /* ── Navbar scroll behaviour ─────────────────── */
   var header = document.getElementById('header');
 
@@ -300,7 +313,7 @@
   if ('IntersectionObserver' in window) {
     var style = document.createElement('style');
     style.textContent =
-      '.fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }' +
+      '.fade-in { opacity: 0; transform: translateY(28px); transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); }' +
       '.fade-in.visible { opacity: 1; transform: translateY(0); }';
     document.head.appendChild(style);
 
