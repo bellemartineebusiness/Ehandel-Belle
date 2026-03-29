@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Belle Martineé E-handel – Stilfull klädkollektion. Handla hoodies, tröjor och accessories från Belle Martineé Studios." />
+  <title>Belle Martineé E-handel – Stil &amp; Elegans</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Announcement Bar ─────────────────────── -->
+  <div class="announcement-bar">
+    🚚 Fri frakt på beställningar över <span>599 kr</span> &nbsp;|&nbsp; ✦ Ny kollektion ute nu
+  </div>
+
+  <!-- ── Header ──────────────────────────────── -->
+  <header id="header">
+    <div class="container">
+      <nav>
+        <a href="#hem" class="nav-logo" aria-label="Belle Martineé hem">
+          <div class="nav-logo-icon">B</div>
+          <div class="nav-logo-text">
+            <span class="brand-name">Belle Martineé</span>
+            <span class="brand-sub">Studios E-handel</span>
+          </div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#hem">Hem</a></li>
+          <li><a href="#kollektionen">Kollektionen</a></li>
+          <li><a href="#produkter">Produkter</a></li>
+          <li><a href="#om-oss">Om oss</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="cart-btn" id="cartBtn" aria-label="Öppna varukorg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+              <line x1="3" y1="6" x2="21" y2="6"/>
+              <path d="M16 10a4 4 0 01-8 0"/>
+            </svg>
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+          <button class="hamburger" id="hamburger" aria-label="Öppna meny">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Mobile Menu ──────────────────────────── -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigeringsmeny">
+    <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Stäng meny">&times;</button>
+    <a href="#hem" class="mobile-link">Hem</a>
+    <a href="#kollektionen" class="mobile-link">Kollektionen</a>
+    <a href="#produkter" class="mobile-link">Produkter</a>
+    <a href="#om-oss" class="mobile-link">Om oss</a>
+    <a href="#kontakt" class="mobile-link">Kontakt</a>
+  </div>
+
+  <!-- ── Hero ────────────────────────────────── -->
+  <section class="hero" id="hem">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">Ny säsong 2025</div>
+        <p class="hero-tagline">Belle Martineé Studios</p>
+        <h1 class="hero-title">
+          Mode med<br /><span class="accent">Karaktär</span>
+        </h1>
+        <p class="hero-description">
+          Välkommen till Belle Martineé E-handel – där stil möter kvalitet.
+          Utforska vår exklusiva kollektion av hoodies och kläder, skapade
+          för dig som värdesätter både komfort och uttryck.
+        </p>
+        <div class="hero-buttons">
+          <a href="#produkter" class="btn btn-gold">Shoppa nu</a>
+          <a href="#om-oss" class="btn btn-outline">Läs mer</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="number">500+</span>
+            <span class="label">Nöjda kunder</span>
+          </div>
+          <div class="hero-stat">
+            <span class="number">⭐ 4.9</span>
+            <span class="label">Betyg</span>
+          </div>
+          <div class="hero-stat">
+            <span class="number">100%</span>
+            <span class="label">Kvalitet</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image-stack">
+          <img
+            src="https://github.com/user-attachments/assets/117f77bf-6559-41c6-9193-11e96d4201f8"
+            alt="Belle Martineé hoodie utomhus"
+            class="hero-img-main"
+          />
+          <img
+            src="https://github.com/user-attachments/assets/f4c3bce4-1099-4c2d-ae9c-c91b1e1410b6"
+            alt="Belle Martineé hoodie inomhus"
+            class="hero-img-accent"
+          />
+          <div class="hero-float-badge">
+            <span class="rating">★★★★★</span>
+            <span class="rating-text">Toppbetyg</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Features Strip ───────────────────────── -->
+  <div class="features-strip">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon">🚚</div>
+          <div class="feature-text">
+            <span class="title">Fri frakt</span>
+            <span class="desc">Över 599 kr</span>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">↩️</div>
+          <div class="feature-text">
+            <span class="title">30 dagars retur</span>
+            <span class="desc">Enkel returprocess</span>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🔒</div>
+          <div class="feature-text">
+            <span class="title">Säker betalning</span>
+            <span class="desc">Krypterad & trygg</span>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">💎</div>
+          <div class="feature-text">
+            <span class="title">Premium kvalitet</span>
+            <span class="desc">Handplockat material</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Collection Showcase ──────────────────── -->
+  <section class="section collection-section" id="kollektionen">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-label">Exklusivt utval</span>
+        <h2 class="section-title">Vår Kollektion</h2>
+        <p class="section-subtitle">Handplockat mode med känsla för detaljer och hållbarhet.</p>
+      </div>
+
+      <div class="collection-grid">
+        <div class="collection-card featured">
+          <img
+            src="https://github.com/user-attachments/assets/117f77bf-6559-41c6-9193-11e96d4201f8"
+            alt="Höstkollektion Belle Martineé"
+          />
+          <div class="collection-overlay">
+            <span class="collection-label">Bestseller</span>
+            <h3 class="collection-title">Signatur Hoodie</h3>
+            <a href="#produkter" class="collection-link">Utforska kollektion →</a>
+          </div>
+        </div>
+        <div class="collection-card">
+          <img
+            src="https://github.com/user-attachments/assets/f4c3bce4-1099-4c2d-ae9c-c91b1e1410b6"
+            alt="Inomhuskollektion Belle Martineé"
+          />
+          <div class="collection-overlay">
+            <span class="collection-label">Ny</span>
+            <h3 class="collection-title">Vintersäsong</h3>
+            <a href="#produkter" class="collection-link">Se mer →</a>
+          </div>
+        </div>
+        <div class="collection-card">
+          <img
+            src="https://github.com/user-attachments/assets/b79946c1-65d2-45bf-b7bf-fd48d9e58dd0"
+            alt="Livsstil Belle Martineé"
+          />
+          <div class="collection-overlay">
+            <span class="collection-label">Lifestyle</span>
+            <h3 class="collection-title">Belle Martineé Livsstil</h3>
+            <a href="#produkter" class="collection-link">Handla nu →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Products ─────────────────────────────── -->
+  <section class="section products-section" id="produkter">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Butiken</span>
+        <h2 class="section-title">Utvalda Produkter</h2>
+        <p class="section-subtitle">Kvalitetskläder med Belle Martineé Studios signaturstil.</p>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="alla">Alla</button>
+        <button class="filter-btn" data-filter="hoodies">Hoodies</button>
+        <button class="filter-btn" data-filter="nyheter">Nyheter</button>
+        <button class="filter-btn" data-filter="rea">Rea</button>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+
+        <!-- Product 1 -->
+        <div class="product-card" data-category="hoodies nyheter">
+          <div class="product-image-wrap">
+            <img
+              src="https://github.com/user-attachments/assets/117f77bf-6559-41c6-9193-11e96d4201f8"
+              alt="Belle Martineé Signatur Hoodie Burgundy"
+              loading="lazy"
+            />
+            <span class="product-badge new">Ny</span>
+            <button class="product-wishlist" aria-label="Lägg till i önskelista">♡</button>
+            <button class="product-quick-add" data-name="Signatur Hoodie – Burgundy" data-price="599" data-img="https://github.com/user-attachments/assets/117f77bf-6559-41c6-9193-11e96d4201f8">
+              + Lägg i varukorg
+            </button>
+          </div>
+          <div class="product-info">
+            <p class="product-category">Hoodie</p>
+            <h3 class="product-name">Signatur Hoodie – Burgundy</h3>
+            <p class="product-description">Belle Martineé Studios ikoniska hoodie i mjukt premium-material. Perfekt för alla tillfällen.</p>
+            <div class="product-footer">
+              <div class="product-price">599 kr</div>
+              <div class="size-options">
+                <button class="size-chip" aria-label="Storlek S">S</button>
+                <button class="size-chip active" aria-label="Storlek M">M</button>
+                <button class="size-chip" aria-label="Storlek L">L</button>
+                <button class="size-chip" aria-label="Storlek XL">XL</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card" data-category="hoodies">
+          <div class="product-image-wrap">
+            <img
+              src="https://github.com/user-attachments/assets/f4c3bce4-1099-4c2d-ae9c-c91b1e1410b6"
+              alt="Belle Martineé Classic Hoodie"
+              loading="lazy"
+            />
+            <span class="product-badge">Populär</span>
+            <button class="product-wishlist" aria-label="Lägg till i önskelista">♡</button>
+            <button class="product-quick-add" data-name="Classic Hoodie – Plommon" data-price="549" data-img="https://github.com/user-attachments/assets/f4c3bce4-1099-4c2d-ae9c-c91b1e1410b6">
+              + Lägg i varukorg
+            </button>
+          </div>
+          <div class="product-info">
+            <p class="product-category">Hoodie</p>
+            <h3 class="product-name">Classic Hoodie – Plommon</h3>
+            <p class="product-description">Vår klassiska hoodie i djup plommonfärg med broderat Belle Martineé Studios-märke.</p>
+            <div class="product-footer">
+              <div class="product-price">549 kr</div>
+              <div class="size-options">
+                <button class="size-chip" aria-label="Storlek S">S</button>
+                <button class="size-chip active" aria-label="Storlek M">M</button>
+                <button class="size-chip" aria-label="Storlek L">L</button>
+                <button class="size-chip" aria-label="Storlek XL">XL</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card" data-category="nyheter rea">
+          <div class="product-image-wrap">
+            <img
+              src="https://github.com/user-attachments/assets/b79946c1-65d2-45bf-b7bf-fd48d9e58dd0"
+              alt="Belle Martineé Livsstilspaket"
+              loading="lazy"
+            />
+            <span class="product-badge">Rea</span>
+            <button class="product-wishlist" aria-label="Lägg till i önskelista">♡</button>
+            <button class="product-quick-add" data-name="Livsstilspaket – Belle Martineé" data-price="449" data-img="https://github.com/user-attachments/assets/b79946c1-65d2-45bf-b7bf-fd48d9e58dd0">
+              + Lägg i varukorg
+            </button>
+          </div>
+          <div class="product-info">
+            <p class="product-category">Special</p>
+            <h3 class="product-name">Livsstilspaket</h3>
+            <p class="product-description">Komplett livsstilspaket från Belle Martineé. Allt du behöver för en snygg vardag.</p>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="old-price">599 kr</span>449 kr
+              </div>
+              <div class="size-options">
+                <button class="size-chip active" aria-label="Storlek S">S</button>
+                <button class="size-chip" aria-label="Storlek M">M</button>
+                <button class="size-chip" aria-label="Storlek L">L</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card" data-category="hoodies nyheter">
+          <div class="product-image-wrap">
+            <img
+              src="https://github.com/user-attachments/assets/117f77bf-6559-41c6-9193-11e96d4201f8"
+              alt="Belle Martineé Limited Edition Hoodie"
+              loading="lazy"
+            />
+            <span class="product-badge new">Limited</span>
+            <button class="product-wishlist" aria-label="Lägg till i önskelista">♡</button>
+            <button class="product-quick-add" data-name="Limited Edition Hoodie" data-price="799" data-img="https://github.com/user-attachments/assets/117f77bf-6559-41c6-9193-11e96d4201f8">
+              + Lägg i varukorg
+            </button>
+          </div>
+          <div class="product-info">
+            <p class="product-category">Limited Edition</p>
+            <h3 class="product-name">Limited Edition Hoodie</h3>
+            <p class="product-description">Exklusiv limited edition med speciellt broderat signaturtryck. Begränsad upplaga.</p>
+            <div class="product-footer">
+              <div class="product-price">799 kr</div>
+              <div class="size-options">
+                <button class="size-chip" aria-label="Storlek S">S</button>
+                <button class="size-chip active" aria-label="Storlek M">M</button>
+                <button class="size-chip" aria-label="Storlek L">L</button>
+                <button class="size-chip" aria-label="Storlek XL">XL</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card" data-category="hoodies">
+          <div class="product-image-wrap">
+            <img
+              src="https://github.com/user-attachments/assets/f4c3bce4-1099-4c2d-ae9c-c91b1e1410b6"
+              alt="Belle Martineé Oversized Hoodie"
+              loading="lazy"
+            />
+            <button class="product-wishlist" aria-label="Lägg till i önskelista">♡</button>
+            <button class="product-quick-add" data-name="Oversized Hoodie – Mörk Lila" data-price="649" data-img="https://github.com/user-attachments/assets/f4c3bce4-1099-4c2d-ae9c-c91b1e1410b6">
+              + Lägg i varukorg
+            </button>
+          </div>
+          <div class="product-info">
+            <p class="product-category">Hoodie</p>
+            <h3 class="product-name">Oversized Hoodie – Mörk Lila</h3>
+            <p class="product-description">Oversized passform för maximal komfort. Mjuk innersida och stilren design.</p>
+            <div class="product-footer">
+              <div class="product-price">649 kr</div>
+              <div class="size-options">
+                <button class="size-chip active" aria-label="Storlek S/M">S/M</button>
+                <button class="size-chip" aria-label="Storlek L/XL">L/XL</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card" data-category="nyheter">
+          <div class="product-image-wrap">
+            <img
+              src="https://github.com/user-attachments/assets/b79946c1-65d2-45bf-b7bf-fd48d9e58dd0"
+              alt="Belle Martineé Presenter"
+              loading="lazy"
+            />
+            <span class="product-badge new">Nyhet</span>
+            <button class="product-wishlist" aria-label="Lägg till i önskelista">♡</button>
+            <button class="product-quick-add" data-name="Presentkort – Belle Martineé" data-price="500" data-img="https://github.com/user-attachments/assets/b79946c1-65d2-45bf-b7bf-fd48d9e58dd0">
+              + Lägg i varukorg
+            </button>
+          </div>
+          <div class="product-info">
+            <p class="product-category">Presentkort</p>
+            <h3 class="product-name">Presentkort</h3>
+            <p class="product-description">Ge bort smaken av Belle Martineé. Välj valfritt belopp – perfekt present till alla tillfällen.</p>
+            <div class="product-footer">
+              <div class="product-price">Från 250 kr</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── About ─────────────────────────────────── -->
+  <section class="section about-section" id="om-oss">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images">
+          <img
+            src="https://github.com/user-attachments/assets/117f77bf-6559-41c6-9193-11e96d4201f8"
+            alt="Belle Martineé Studios – Varumärket"
+            class="about-img-main"
+          />
+          <img
+            src="https://github.com/user-attachments/assets/f4c3bce4-1099-4c2d-ae9c-c91b1e1410b6"
+            alt="Belle Martineé Studios hoodie detalj"
+            class="about-img-accent"
+          />
+          <div class="about-tag">
+            <span class="year">2024</span>
+            <span class="year-label">Grundat</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-label">Vår historia</span>
+          <h2 class="section-title">Om Belle Martineé</h2>
+          <p class="section-subtitle">
+            Belle Martineé är ett ungt och passionerat modemärke som kombinerar modern streetstyle med tidlös elegans.
+          </p>
+          <p style="margin-top: 20px; color: var(--color-gray); font-size: 0.95rem; line-height: 1.9;">
+            Vi på Belle Martineé Studios tror på att kläder ska vara mer än bara tyg – de ska berätta en historia,
+            spegla din personlighet och göra dig snygg varje dag. Vår signaturhoodie i den ikoniska burgundyfärgen
+            har blivit en symbol för stil med substans.
+          </p>
+          <p style="margin-top: 12px; color: var(--color-gray); font-size: 0.95rem; line-height: 1.9;">
+            Varje plagg är omsorgsfullt designat med fokus på kvalitetsmaterial och hållbarhet. Vi strävar alltid
+            efter att leverera produkter som håller länge och ser bra ut – oavsett tillfälle.
+          </p>
+
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="about-feature-icon">🧵</div>
+              <div class="about-feature-text">
+                <span class="title">Premium material</span>
+                <span class="desc">Mjuk bomullsblandning av högsta kvalitet för maximal komfort.</span>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">🌍</div>
+              <div class="about-feature-text">
+                <span class="title">Hållbart mode</span>
+                <span class="desc">Vi värnar om miljön och arbetar för ett mer hållbart modelandskap.</span>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">✨</div>
+              <div class="about-feature-text">
+                <span class="title">Unik design</span>
+                <span class="desc">Signaturtryck och brodyr som gör varje plagg unikt.</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 32px;">
+            <a href="#produkter" class="btn btn-primary">Utforska kollektionen</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Testimonials ──────────────────────────── -->
+  <section class="section testimonials-section">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-label">Kundrecensioner</span>
+        <h2 class="section-title">Vad våra kunder säger</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">
+            "Absolut bästa hoodien jag ägt! Kvaliteten är fantastisk och designen är så snygg.
+            Fick massor av komplimanger första gången jag bar den."
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">E</div>
+            <div>
+              <div class="testimonial-name">Emma L.</div>
+              <div class="testimonial-location">Stockholm</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">
+            "Snabb leverans och plagget var exakt som på bilderna. Burgundyfärgen är verkligen
+            unik och materialet är otroligt mjukt. Beställer definitivt igen!"
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">M</div>
+            <div>
+              <div class="testimonial-name">Marcus T.</div>
+              <div class="testimonial-location">Göteborg</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">
+            "Perfekt present! Min bror älskade sin Belle Martineé hoodie. Väldigt stilren och
+            brodyrlogotypen ser lyxig ut. Rekommenderar varmt!"
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">S</div>
+            <div>
+              <div class="testimonial-name">Sara K.</div>
+              <div class="testimonial-location">Malmö</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Newsletter ─────────────────────────────── -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-box">
+        <div class="newsletter-content">
+          <span class="section-label">Håll dig uppdaterad</span>
+          <h2 class="section-title">Nyhetsbrev</h2>
+          <p>Prenumerera och få <strong>10% rabatt</strong> på din första beställning, plus exklusiva nyheter om nya kollektioner och erbjudanden.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm" novalidate>
+          <input
+            type="email"
+            class="newsletter-input"
+            placeholder="Din e-postadress"
+            aria-label="E-postadress för nyhetsbrev"
+            required
+          />
+          <button type="submit" class="btn btn-primary">Prenumerera ✦</button>
+          <span class="newsletter-note">🔒 Ingen spam. Avsluta prenumerationen när som helst.</span>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact ───────────────────────────────── -->
+  <section class="section contact-section" id="kontakt">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-label">Hör av dig</span>
+          <h2 class="section-title">Kontakta oss</h2>
+          <p class="section-subtitle">
+            Har du frågor om våra produkter, beställningar eller leveranser? Vi hjälper dig gärna!
+          </p>
+
+          <div class="contact-info-items">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📧</div>
+              <div class="contact-info-text">
+                <span class="label">E-post</span>
+                <span class="value">info@bellemartinee.se</span>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📱</div>
+              <div class="contact-info-text">
+                <span class="label">Telefon</span>
+                <span class="value">+46 70 000 00 00</span>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">🕐</div>
+              <div class="contact-info-text">
+                <span class="label">Svarstid</span>
+                <span class="value">Måndag–Fredag, 09–17</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="TikTok">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.53V6.77a4.85 4.85 0 01-1.02-.08z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">Förnamn</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Anna" autocomplete="given-name" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Efternamn</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Lindqvist" autocomplete="family-name" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">E-postadress</label>
+            <input type="email" id="email" name="email" placeholder="anna@exempel.se" autocomplete="email" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Ämne</label>
+            <select id="subject" name="subject">
+              <option value="">Välj ett ämne</option>
+              <option value="beställning">Fråga om beställning</option>
+              <option value="retur">Retur &amp; byte</option>
+              <option value="produkt">Produktfråga</option>
+              <option value="samarbete">Samarbete</option>
+              <option value="annat">Annat</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Meddelande</label>
+            <textarea id="message" name="message" placeholder="Berätta gärna mer om ditt ärende..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Skicka meddelande ✉️</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ───────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <div class="logo-text">Belle Martineé</div>
+          <span class="logo-sub">Studios E-handel</span>
+          <p>Ditt stilfulla val för premium kläder och accessories. Kvalitet som syns och känns, direkt till din dörr.</p>
+          <div class="social-links" style="margin-top: 20px;">
+            <a href="#" class="social-link" aria-label="Instagram" style="background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.7);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook" style="background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.7);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Butiken</h4>
+          <ul>
+            <li><a href="#produkter">Alla produkter</a></li>
+            <li><a href="#kollektionen">Ny kollektion</a></li>
+            <li><a href="#produkter">Hoodies</a></li>
+            <li><a href="#produkter">Presentkort</a></li>
+            <li><a href="#produkter">Rea</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Information</h4>
+          <ul>
+            <li><a href="#om-oss">Om oss</a></li>
+            <li><a href="#">Frakt &amp; Leverans</a></li>
+            <li><a href="#">Retur &amp; Byte</a></li>
+            <li><a href="#">Storleksguide</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Kundservice</h4>
+          <ul>
+            <li><a href="#kontakt">Kontakta oss</a></li>
+            <li><a href="#">Spåra beställning</a></li>
+            <li><a href="#">Integritetspolicy</a></li>
+            <li><a href="#">Allmänna villkor</a></li>
+            <li><a href="#">Cookiepolicy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-bottom-text">&copy; 2025 Belle Martineé E-handel. Alla rättigheter förbehållna.</p>
+        <div class="footer-payment">
+          <span class="payment-badge">VISA</span>
+          <span class="payment-badge">Mastercard</span>
+          <span class="payment-badge">Klarna</span>
+          <span class="payment-badge">Swish</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── Cart Drawer ──────────────────────────── -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-label="Varukorg">
+    <div class="cart-header">
+      <h3>Din Varukorg</h3>
+      <button class="cart-close" id="cartClose" aria-label="Stäng varukorg">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty" id="cartEmpty">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <path d="M16 10a4 4 0 01-8 0"/>
+        </svg>
+        <p style="font-weight: 700; margin-bottom: 6px;">Din varukorg är tom</p>
+        <p style="font-size: 0.85rem;">Lägg till produkter för att fortsätta.</p>
+      </div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display: none;">
+      <div class="cart-total-row">
+        <span class="cart-total-label">Totalt</span>
+        <span class="cart-total-amount" id="cartTotal">0 kr</span>
+      </div>
+      <button class="btn btn-primary cart-checkout-btn">Gå till kassan →</button>
+      <button class="cart-continue-btn" id="cartContinue">Fortsätt handla</button>
+    </div>
+  </aside>
+
+  <!-- ── Toast ────────────────────────────────── -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- ── Scroll to top ────────────────────────── -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scrolla till toppen">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
